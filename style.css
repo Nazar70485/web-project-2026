@@ -1,60 +1,87 @@
-/* Podstawowe resetowanie stylów */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Główne style kontenera */
+main {
+    padding: 40px 10%;
+    min-height: 80vh;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Flexbox w nawigacji */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #333;
-    color: #fff;
-    padding: 1rem 5%;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
+/* Stylizacja sekcji Hero */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
     color: white;
-    text-decoration: none;
-    transition: color 0.3s;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
-.nav-links a:hover {
+#cta-btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    background: #fff;
     color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
-/* CSS Grid dla sekcji funkcji */
+#cta-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Stylizacja kart (Grid) */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
 }
 
-/* Responsywność (Media Queries) */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-    
-    .nav-links {
-        margin-top: 10px;
-    }
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: translateY 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Stylizacja formularza */
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 40px;
 }
