@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | TechHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TechHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="projects.html">Projekty</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Skontaktuj się ze mną</h1>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Twoje Imię" required>
+                <input type="email" id="email" placeholder="Twój Email" required>
+                <textarea id="message" placeholder="Wiadomość" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+            <div id="form-feedback"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wszystkie prawa zastrzeżone</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
